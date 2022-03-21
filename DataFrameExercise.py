@@ -71,7 +71,7 @@ f  Michael   20.0         3     yes
 """
 
 
-greater_than = exams[exams[2] > 2]
+greater_than = exams[exams.iloc[:,2] > 2]
 print(greater_than)
 
 
@@ -86,7 +86,8 @@ j         1      Jonas       yes        19.0
 
 """
 
-
+betw = exams[(exams.iloc[:,1] >= 15) & (exams.iloc[:,1] <= 20)]
+print(betw)
 
 
 
@@ -110,5 +111,5 @@ Expected Output:
 """
 
 
-
-
+sort = exams.sort_values(by=['attempts','name'])
+print(sort)

@@ -7,7 +7,7 @@ salesArray = np.array([[150.68,207.99,107.88,58.99,60.59],[20.89,98.99,258.62,19
 ## Step 1: Print the total sales for the store.
 print("-----------------------------------------------   STEP ONE   -----------------------------------------------")
 total = salesArray.sum()
-print(total)
+print("Total Sales: ", total)
 
 ## Step 2: What was Superstore's smallest and largest sale? Print them.
 print("-----------------------------------------------   STEP TWO   -----------------------------------------------")
