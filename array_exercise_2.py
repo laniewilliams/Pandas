@@ -54,6 +54,9 @@ print(add)
 ## Step 9: Register #3 had an error and recorded it's fourth sale ($200.14) incorrectly. The sale should have been $20.14. Update the array to correct this error.
 #           Print the array before and after the update to see the change.
 print("-----------------------------------------------   STEP NINE  -----------------------------------------------")
-salesArray[2,3] = 20.14
+salesArray2 = salesArray.copy()
+salesArray2[2,3] = 20.14
 print(salesArray)
+print()
+print(salesArray2)
 
