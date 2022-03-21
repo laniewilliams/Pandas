@@ -11,7 +11,8 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 
 #given the data above, create a datafram using the labels as row indexes and perform the following tasks#
-
+exams = pd.DataFrame(exam_data,labels)
+print(exams)
 
 
 
@@ -35,13 +36,14 @@ i      Kevin    8.0
 j      Jonas   19.0 
 """
 
-
+name_score = exams.iloc[:,0:2]
+print(name_score)
 
 
 
 
 """
-(2) Select 'name' and 'score' columns in rows 1, 3, 5, 6 from the data frame.
+(2) Select 'score' and 'qualify' columns in rows 1, 3, 5, 6 from the data frame.
 
 Expected Output:
    score qualify
@@ -53,8 +55,8 @@ g   14.5     yes
 """
 
 
-
-
+df2 = exams.iloc[[1,3,5,6],[1,3]]
+print(df2)
 
 
 """
@@ -69,8 +71,8 @@ f  Michael   20.0         3     yes
 """
 
 
-
-
+greater_than = exams[exams[2] > 2]
+print(greater_than)
 
 
 """
